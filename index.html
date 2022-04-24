@@ -33,7 +33,7 @@
 <a href="#home" class="w3-bar-item w3-button"><b>PR</b> CrunchTime</a>
 <!-- Float links to the right. Hide them on small screens -->
 <div class="w3-right w3-hide-small">
-<a href="#projects" class="w3-bar-item w3-button">Projects</a>
+<a href="#projects" class="w3-bar-item w3-button">Sports</a>
 <a href="#about" class="w3-bar-item w3-button">About</a>
 <a href="#contact" class="w3-bar-item w3-button">Contact</a>
 
@@ -68,12 +68,12 @@
  
      <div class="container">
        <label for="uname"><b>Username</b></label>
-       <input type="text" placeholder="Enter Username" name="uname" required>
+       <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
  
        <label for="psw"><b>Password</b></label>
-       <input type="password" placeholder="Enter Password" name="psw" required>
+       <input id="upassword" type="password" placeholder="Enter Password" name="psw" required>
          
-       <button type="submit">Login</button>
+       <button type="submit" >Login</button>
        <label>
          <input type="checkbox" checked="checked" name="remember"> Remember me
        </label>
@@ -168,7 +168,21 @@
 
   <div >
 
-    <input class="hero-input" type="search" placeholder="Search Sports" aria-label="Search">
+    <input class="hero-input" type="search" id="myInput" onkeyup="myFunction()" placeholder="Search Sports" aria-label="Search">
+
+    <ul id="myUL" style="display: none;" >
+      <li><a href="#">cricket</a></li>
+      <li><a href="#">football</a></li>
+    
+      <li><a href="#">vollyball</a></li>
+      <li><a href="#">Badminton</a></li>
+    
+      <li><a href="#">Boxing</a></li>
+      <li><a href="#">Cycling</a></li>
+      <li><a href="#">Hockey</a></li>
+      <li><a href="#">skating</a></li>
+
+    </ul>
 
   </div>
 
@@ -187,57 +201,90 @@
 
 <div class="w3-col l3 m6 w3-margin-bottom">
 <div class="w3-display-container">
-  <div class="w3-display-topleft w3-black w3-padding">Cricket</div>
-  <img src="/w3images/cricket.jpg" alt="House" style="width:100%">
+
+
+  <a href="./sports/cricket.html">
+
+    
+    <div class="w3-display-topleft w3-black w3-padding">Cricket</div>
+    <img src="/w3images/cricket.jpg" alt="House" style="width:100%">
+    
+  </a>
+
+
 </div>
 </div>
 
 <div class="w3-col l3 m6 w3-margin-bottom">
 <div class="w3-display-container">
-  <div class="w3-display-topleft w3-black w3-padding">Football</div>
-  <img src="/w3images/football.jpg" alt="House" style="width:100%">
+
+  <a href="./sports/football.html">
+
+    
+    <div class="w3-display-topleft w3-black w3-padding">Football</div>
+    <img src="/w3images/football.jpg" alt="House" style="width:100%">
+  </a>
+
 </div>
 </div>
 
 <div class="w3-col l3 m6 w3-margin-bottom">
 <div class="w3-display-container">
-  <div class="w3-display-topleft w3-black w3-padding">Vollyball</div>
-  <img src="/w3images/vollyball.jpg" alt="House" style="width:100%">
+  <a href="./sports/vollyball.html">
+
+    <div class="w3-display-topleft w3-black w3-padding">Vollyball</div>
+    <img src="/w3images/vollyball.jpg" alt="House" style="width:100%">
+  </a>
 </div>
 </div>
 
 <div class="w3-col l3 m6 w3-margin-bottom">
 <div class="w3-display-container">
-  <div class="w3-display-topleft w3-black w3-padding">Badminton</div>
-  <img src="/w3images/badminton.jpg" alt="House" style="width:100%">
+  <a href="./sports/badminton.html">
+
+    <div class="w3-display-topleft w3-black w3-padding">Badminton</div>
+    <img src="/w3images/badminton.jpg" alt="House" style="width:100%">
+  </a>
 </div>
 </div>
 
 <div class="w3-col l3 m6 w3-margin-bottom">
 <div class="w3-display-container">
-  <div class="w3-display-topleft w3-black w3-padding">Boxing</div>
-  <img src="/w3images/boxing.jpg" alt="House" style="width:99%">
+  <a href="./sports/boxing.html">
+
+    <div class="w3-display-topleft w3-black w3-padding">Boxing</div>
+    <img src="/w3images/boxing.jpg" alt="House" style="width:99%">
+  </a>
 </div>
 </div>
 
 <div class="w3-col l3 m6 w3-margin-bottom">
 <div class="w3-display-container">
-  <div class="w3-display-topleft w3-black w3-padding">Cycling</div>
-  <img src="/w3images/cycling.jpg" alt="House" style="width:99%">
+  <a href="./sports/cycling.html">
+
+    <div class="w3-display-topleft w3-black w3-padding">Cycling</div>
+    <img src="/w3images/cycling.jpg" alt="House" style="width:99%">
+  </a>
 </div>
 </div>
 
 <div class="w3-col l3 m6 w3-margin-bottom">
 <div class="w3-display-container">
-  <div class="w3-display-topleft w3-black w3-padding">Hockey</div>
-  <img src="/w3images/hockey.jpg" alt="House" style="width:99%">
+  <a href="./sports/hockey.html">
+
+    <div class="w3-display-topleft w3-black w3-padding">Hockey</div>
+    <img src="/w3images/hockey.jpg" alt="House" style="width:99%">
+  </a>
 </div>
 </div>
 
 <div class="w3-col l3 m6 w3-margin-bottom">
 <div class="w3-display-container">
-  <div class="w3-display-topleft w3-black w3-padding">Skating</div>
-  <img src="/w3images/skating.jpg" alt="House" style="width:99%">
+  <a href="./sports/skating.html">
+
+    <div class="w3-display-topleft w3-black w3-padding">Skating</div>
+    <img src="/w3images/skating.jpg" alt="House" style="width:99%">
+  </a>
 </div>
 </div>
 
